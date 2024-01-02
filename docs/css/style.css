@@ -12,9 +12,14 @@
 	width: 1.7vh;
 }
 
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track:vertical {
 	background-color: var(--background);
-	border-radius: 1.25px 1.25px 0px 0px;
+	border-radius: 10px 0px 0px 10px;
+}
+
+::-webkit-scrollbar-track:horizontal {
+	background-color: var(--background);
+	border-radius: 10px 10px 0px 0px;
 }
 
 ::-webkit-scrollbar-thumb {
