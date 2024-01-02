@@ -1,6 +1,4 @@
 .markdown-section table {
-    --textColor: #b4b4b4;
-    color: #b4b4b4;
 	border-collapse: collapse;
 	border-spacing: 0;
 	display: block;
@@ -20,10 +18,10 @@
 }
 
 .markdown-section tr {
-    background-color: #222222;
+    background-color: var(--backgroundColor);
 	border-top: 1px solid #b4b4b4;
 }
 
 .markdown-section tbody tr:nth-child(2n-1) {
-	background-color: #333333;
+	background-color: var(--codeBackgroundColor);
 }

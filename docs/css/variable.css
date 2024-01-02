@@ -1,20 +1,28 @@
+style {
+    --valueColor: #569CD6;
+    --methodColor: #DCDCAA;
+    --enumColor: #B8D7A3;
+    --classColor: #4EC9B0;
+    --structColor: #86C691;
+}
+
 value::after {
-    color: #569CD6;
+    color: var(--valueColor);
     content: attr(v);
 }
 
 method::after {
-    color: #DCDCAA;
+    color: var(--methodColor);
     content: attr(m);
 }
 
 enum::after {
-    color: #B8D7A3;
+    color: var(--enumColor);
     content: attr(e);
 }
 
 class::before {
-    color: #4EC9B0;
+    color: var(--classColor);
     content: attr(c);
 }
 
@@ -29,6 +37,6 @@ type::after {
 }
 
 struct::after {
-    color: #86C691;
+    color: var(--structColor);
     content: attr(s);
 }

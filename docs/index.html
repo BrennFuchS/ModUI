@@ -33,7 +33,7 @@
         function(hook) {
           var footer = [
             '<footer style="text-align: center;margin-top: 50px;">',
-            '<span> ModUI Documentation &copy; 2022 </span>',
+            '<span> ModUI Documentation &copy; 2024 </span>',
             '</footer>'
           ].join('');
 
@@ -48,27 +48,39 @@
         codeFontFamily : 'Roboto Mono, Monaco, courier, monospace',
         bodyFontSize : '17px',
         dark: {
+          background: '#1f1f1f',
           textColor: '#b4b4b4',
-          codeTextColor : '#DCDCDC',
-          codeBackgroundColor : '#1E1E1E',
+          codeTextColor : '#cccccc',
+          codeBackgroundColor : '#303136',
           codeTypeColor : '#ffffff',
           blockQuoteColour : '#858585',
-          coverBackground : 'linear-gradient(to bottom, hsl(118, 100%, 15%) 0%,hsl(181, 100%, 15%) 100%)'
+          coverBackground : 'linear-gradient(to bottom, hsl(118, 100%, 15%) 0%,hsl(181, 100%, 15%) 100%)',
+          valueColor: '#569CD6',
+          methodColor: '#DCDCAA',
+          enumColor: '#B8D7A3',
+          classColor: '#4EC9B0',
+          structColor: '#86C691'
         },
         light: {
+          background: '#ffffff',
           textColor: '#34495e',
-          codeTextColor : '#DCDCDC',
-          codeBackgroundColor : '#1E1E1E',
-          codeTypeColor : '#ffffff',
+          codeTextColor : '#525252',
+          codeBackgroundColor : '#f5f5f5',
+          codeTypeColor : '#091a28',
           blockQuoteColor : '#858585',
           highlightColor : '#d22778',
-          coverBackground : 'linear-gradient(to bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)'
+          coverBackground : 'linear-gradient(to bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+          valueColor: '#0000FF',
+          methodColor: '#74531F',
+          enumColor: '#2B91AF',
+          classColor: '#2B91AF',
+          structColor: '#2B91AF'
         }
       },
       tabs: {
         persist    : true,      // default
         sync       : true,      // default
-        theme      : 'material', // default
+        //theme      : 'material', // default
         tabComments: true,      // default
         tabHeadings: true       // default
       },
